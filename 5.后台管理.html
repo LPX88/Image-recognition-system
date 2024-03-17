@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="static/plugins/bootstrap-3.4.1/css/bootstrap.css">
+    <link rel="stylesheet" href="static/plugins/font-awesome-4.7.0/css/font-awesome.css">
+  <style>
+    .back{
+       position:fixed;
+       width:60px;
+       height:60px;
+       border:1px solid red;
+
+       right:10px;
+       bottom:50px;
+    }
+
+    .app{
+        position:relative;
+    }
+    .app .download{
+        position:absolute;
+        height:100px;
+        width:100px;
+        display:none;
+    }
+
+    .app:hover .download{
+        display:block;
+    }
+
+    .aa1{
+        width:100px;
+        height:100px;
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+<div class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">数字图像</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">图像识别系统</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">指纹识别 <span class="sr-only">(current)</span></a></li>
+        <li ><a href="#">手势识别</a></li>
+        <li>
+            <a href="https://www.jd.com/" class="app">京东</a>
+        </li>
+        <li><a href="#">生物识别</a></li>
+        <li><a href="#">数字识别</a></li>
+      </ul>
+
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">登录</a></li>
+        <li><a href="#">注册</a></li>
+
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+
+  <div class="panel panel-info">
+      <div class="panel-heading">
+        <h3 class="panel-title"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span> 表单</h3>
+      </div>
+      <div class="panel-body">
+
+        <form class="form-inline">
+  <div class="form-group">
+    <label class="sr-only" for="exampleInputEmail3">Email address</label>
+    <input type="text" class="form-control" id="exampleInputEmail3" placeholder="User">
+  </div>
+  <div class="form-group">
+    <label class="sr-only" for="exampleInputPassword3">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword3" placeholder="Password">
+  </div>
+
+  <button type="submit" class="btn btn-success"><i class="fa fa-save" aria-hidden="true"></i> 保存</button>
+</form>
+      </div>
+    </div>
+
+
+  <div class="panel panel-success">
+      <div class="panel-heading">
+        <h3 class="panel-title">
+          <span class="glyphicon glyphicon-th-list" aria-hidden="true"></span> 表单</h3>
+      </div>
+      <div class="panel-body">
+        注意
+      </div>
+    <table class="table table-bordered table-hover ">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Username</th>
+          <th>操作</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>Mark</td>
+          <td>Otto</td>
+          <td>@mdo</td>
+          <td>
+            <a class="btn btn-primary btn-xs">编辑</a>
+            <a class="btn btn-danger btn-xs">删除</a>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>Jacob</td>
+          <td>Thornton</td>
+          <td>@fat</td>
+          <td>
+            <a class="btn btn-primary btn-xs">编辑</a>
+            <a class="btn btn-danger btn-xs">删除</a>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td>Larry</td>
+          <td>the Bird</td>
+          <td>@twitter</td>
+          <td>
+            <a class="btn btn-primary btn-xs">编辑</a>
+            <a class="btn btn-danger btn-xs">删除</a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+
+
+</div>
+
+</body>
+</html>

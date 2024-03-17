@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        .dialog{
+           position:fixed;
+           width:600px;
+           height:400px;
+           background-color:white;
+
+           left:0;
+           right:0;
+           margin:0 auto;
+
+           top:200px;
+           z-index:1000;
+        }
+
+        .mask{
+            background-color:blue;
+            position:fixed;
+            left:0;
+            right:0;
+            top:0;
+            bottom:0;
+            opacity:0.1; /* 设置透明度 */
+            z-index:100; /* z-index 数值哪个大，哪个就在外边 */
+        }
+
+        .c1{
+            height:300px;
+            width:500px;
+            border:1px solid red;
+            margin:100px;
+            position:relative;
+        }
+
+        .c1 .c2{
+            height:50px;
+            width:50px;
+            background-color:yellow;
+            position:absolute;
+
+            right:50px;
+            bottom:50px;
+        }
+    </style>
+
+</head>
+<body>
+
+
+    <div class="mask"></div>
+    <div class="dialog"></div>
+
+    <div class="c1">
+        <div class="c2"></div>
+    </div>
+
+
+</body>
+</html>

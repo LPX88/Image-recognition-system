@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+    <link rel="stylesheet" href="static/plugins/bootstrap-3.4.1/css/bootstrap.css">
+    <script src="static/js/jquery-3.7.1.min.js"></script>
+    <script src="static/plugins/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>图像识别系统-注册</title>
+<style>
+
+    body {
+        margin: 0;
+        padding: 0;
+        background: url('static/img/登录背景图.png');
+        background-size: cover;
+        height: 100vh;
+        width: 100vw;
+        overflow: hidden;
+    }
+    .account{
+           position: absolute;
+           left: 30%;
+           top:0;
+            width:600px;
+            height:450px;
+            border:1px solid #dddddd;
+            margin-left:auto;
+            margin-right:auto;
+            margin-top:160px;
+            padding:20px 40px;
+            border-radius:5px;
+            box-shadow:5px 5px 20px #aaa;
+            display: none;
+        }
+        body:hover .account {
+          display: block;
+    }
+      .text-right{
+          position:relative;
+      }
+      .text-right .big-code{
+          position:absolute;
+          display:none;
+      }
+      .text-right:hover .big-code{
+          right:0px;
+          top:0;
+          display:block;
+      }
+
+        .account h1{
+            margin-top:10px;
+            text-align:center;
+        }
+            .navbar{
+            border-radius:0;
+        }
+
+      .account .aa1{
+            display:flex;
+            justify-content:center;
+            align-items:center;
+      }
+        .account .aa1 button{
+            margin: 0px 30px;
+        }
+
+</style>
+</head>
+<body>
+
+<div class="account">
+    <div >
+        <div style="color:orange;"><h1>注册</h1></div>
+        <div class="text-right">扫码注册
+            <div class="big-code" >
+                <img src="static/img/收款码.jpg" class="login-code" style="width:200px;height:200px;">
+            </div>
+        </div>
+
+    </div>
+
+    <form>
+      <div class="form-group">
+        <label ><h4 style="color:#E74C3C;">用户名</h4></label>
+        <input type="text" class="form-control"  placeholder="请输入用户名">
+      </div>
+      <div class="form-group">
+        <label for="exampleInputPassword1"><h4 style="color:#E74C3C;">密码</h4></label>
+        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="请输入密码">
+      </div>
+        <div class="form-group">
+          <label for="confirmPassword"><h4 style="color:#E74C3C;">确认密码</h4></label>
+          <input type="password" class="form-control" id="confirmPassword" placeholder="再次确认密码">
+        </div>
+        <div class="aa1">
+            <button type="submit" class="btn btn-primary btn-lg">注册</button>
+            <button type="reset" class="btn btn-danger btn-lg">重置</button>
+        </div>
+    </form>
+</div>
+
+</body>
+</html>

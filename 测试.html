@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+    <link rel="stylesheet" href="static/plugins/bootstrap-3.4.1/css/bootstrap.min.css">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Centered</title>
+
+  <style>
+    body, html {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    .background-image {
+      background-image: url('static/img/登录背景图.png');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 100%;
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+    }
+
+    body:hover .background-image {
+      opacity: 1;
+    }
+
+    .login-container {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: white;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      display: none;
+    }
+
+    body:hover .login-container {
+      display: block;
+    }
+
+    .qr-code {
+      width: 100px;
+      height: 100px;
+      margin: 0 auto;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .qr-code:hover {
+      transform: translateX(100px);
+    }
+
+    .login-form {
+      background-color: transparent;
+    }
+
+    .login-form .form-control {
+      background-color: #f2f2f2;
+    }
+  </style>
+
+</head>
+<body>
+
+  <div class="background-image"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 col-md-offset-4 login-container">
+        <img src="static/img/登录.png" alt="Login Image" class="img-responsive center-block">
+        <form class="login-form">
+          <div class="form-group">
+            <label for="username">Username:</label>
+            <input type="text" class="form-control" id="username">
+          </div>
+          <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" class="form-control" id="password">
+          </div>
+          <button type="submit" class="btn btn-primary">Login</button>
+        </form>
+        <div class="qr-code-container">
+          <img src="static/img/收款码.jpg" alt="QR Code" class="qr-code">
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<script src="static/plugins/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+
+</body>
+</html>
+
+

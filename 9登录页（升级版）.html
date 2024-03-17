@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+    <link rel="stylesheet" href="static/plugins/bootstrap-3.4.1/css/bootstrap.css">
+    <script src="static/js/jquery-3.7.1.min.js"></script>
+    <script src="static/plugins/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>图像识别系统-登录</title>
+<style>
+
+    body {
+        margin: 0;
+        padding: 0;
+        background: url('static/img/登录背景图1.jpg');
+        background-size: cover;
+        height: 100vh;
+        width: 100vw;
+        overflow: hidden;
+        position: relative;
+    }
+    body:hover{
+        margin: 0;
+        padding: 0;
+        background: url('static/img/登录背景图2.jpg');
+        background-size: cover;
+        height: 100vh;
+        width: 100vw;
+        overflow: hidden;
+        position: relative;
+    }
+    .account{
+       position: absolute;
+       left: 50%;
+       top:25%;
+       width:650px;
+       height:350px;
+       transform: translate(-50%, -50%);
+       border:1px solid #dddddd;
+       margin-top:200px;
+       border-radius:5px;
+       box-shadow:5px 5px 20px #aaa;
+       display: none;
+    }
+        body:hover .account {
+          display: block;
+    }
+      .text-right{
+          position:relative;
+      }
+      .text-right .big-code{
+          position:absolute;
+          display:none;
+      }
+      .text-right:hover .big-code{
+          right:0px;
+          top:0;
+          display:block;
+      }
+
+        .account h1{
+            margin-top:25px;
+            text-align:center;
+        }
+            .navbar{
+            border-radius:0;
+        }
+
+      .account .aa1{
+            display:flex;
+            justify-content:center;
+            align-items:center;
+      }
+        .account .aa1 button{
+            margin: 0px 20px;
+        }
+        .img-right-login{
+            width:300px;
+            height:348px;
+        }
+</style>
+</head>
+<body>
+
+<div class="account">
+    <div class="row">
+        <div class="col-md-6 login-container">
+        <img src="static/img/登录.png" alt="Login Image" class="img-right-login">
+        </div>
+
+        <div class="col-md-5">
+    <div>
+        <div style="color:#140E77;"><h1>登录</h1></div>
+        <div class="text-right">二维码登录
+            <div class="big-code">
+                <img src="static/img/收款码.jpg" class="login-code" style="width:260px;height:260px;">
+            </div>
+        </div>
+
+    </div>
+
+    <form>
+      <div class="form-group">
+        <label ><h5 style="color:#E74C3C;">用户名</h5></label>
+        <input type="text" class="form-control"  placeholder="请输入用户名">
+      </div>
+      <div class="form-group">
+        <label for="exampleInputPassword1"><h5 style="color:#E74C3C;">密码</h5></label>
+        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="请输入密码">
+      </div>
+
+        <div class="aa1">
+            <button type="submit" class="btn btn-primary btn-lg">登录</button>
+            <button type="reset" class="btn btn-danger btn-lg">重置</button>
+            <a>注册</a>
+        </div>
+    </form>
+
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
